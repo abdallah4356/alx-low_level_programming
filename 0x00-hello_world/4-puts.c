@@ -3,10 +3,10 @@
 /**
  * main - Entry point 
  *
- * Description: a C programm that prints with puts function
+ * Description: A C programm that prints with put function
  *
  * Return: Always 0 (Success)
- */
+*/
 
 int main(void)
 {
