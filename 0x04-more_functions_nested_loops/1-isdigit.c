@@ -8,7 +8,7 @@
  * Return: 1 if it's digit and 0 if else
 */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
