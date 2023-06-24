@@ -1,7 +1,8 @@
 #include "main.h"
 
 /*
- * more_numbers - print 0 - 14 ten times using _putchar three times
+ * more_numbers - print 0 - 14 ten times
+ * 		and you can use _putchar three times
  *
  * Return: Always 0 success
 */
@@ -16,7 +17,7 @@ void more_numbers(void)
 		if (count > 9)
 		{
 			_putchar(1 + 48)
-			num = count %10;
+			num = count % 10;
 		}
 		_putchar(num + 48);
 	}
