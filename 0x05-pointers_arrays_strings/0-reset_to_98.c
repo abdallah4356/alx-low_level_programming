@@ -1,18 +1,18 @@
-include "main.h"
+#include "main.h"
 
 /**
- * main: void reset_to_98
+ * reset_to_98 - updates the value of the pointers value n to 98
  *
- * Description: updating the variables value through the pointer n
+ * @n: the integer variable
  *
  * Return: (0) Always success
 */
 
 void reset_to_98(int *n)
 {
-	int *n = &n;
+	int u = 98;
 
-	n = 98;
+	n = &u;
 
 	return (0);
 }
