@@ -17,5 +17,5 @@ int main(void)
 	char password[len + 1];
 	srand(time(NULL));
 
-	while()
+	
 }
