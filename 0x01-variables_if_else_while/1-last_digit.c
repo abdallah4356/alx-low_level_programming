@@ -3,28 +3,28 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - checks if the last digit of n is greater than or less than 5 or = 0
  *
- * Description: print the value of n status:
- * 		greater than, is zero and is not less than 6.
+ * Description: printing the last digit of n
  *
- * Return: Always 0 (Success)
+ * Return: 0 (success)
 */
 
 int main(void)
 {
-	int n, digit;
+	int n, ldigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	digit = n % 10;
+	ldigit = n % 10;
 
-		if (digit > 5){
-			printf("Last digit of %i is %i and is greater than 5\n", n, digit);
-		
-	}else if (digit == 0){
-			printf("Last digit of %i is %i and is 0\n", n, digit);
-		}else (digit < 6 && digit != 0){
-			printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);}
+	if (ldigit > 5)
+		printf("Last digit of %d is %d and is greater than 5", n, ldigit);
+	else if (ldigit == 0)
+		printf("Last digit of %d is 0 and is 0", n);
+	else if (ldigit < 6 && ldigit != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, ldigit);
+
+	printf("\n");
 	return (0);
 }
