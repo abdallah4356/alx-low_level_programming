@@ -12,17 +12,14 @@ int main(void)
 {
 	int n = 48;
 
-	while (n <= 57)
+	while (n <= 56)
 	{
-		putchar(n);
+		putchar(44);
+		putchar(32);
 		n++;
-		if (n < 57 && n != 57)
-			{
-			putchar(44);
-			putchar(32);
-			n++;
-			}
 	}
+	if (n == 57)
+		putchar(n);
 	putchar('\n');
 
 	return (0);
