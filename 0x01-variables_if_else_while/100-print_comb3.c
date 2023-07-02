@@ -18,7 +18,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	while (j <= 57)
+	while (j <= n)
 	{
 		putchar(n);
 
