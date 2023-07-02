@@ -12,8 +12,11 @@ int main(void)
 {
 	int lower = 'a';
 
-	while (lower <= 'z' && lower != 'q' && lower != 'e')
-	{	putchar(lower);
+	while (lower <= 'z')
+	{
+		if (lower == 'q' || lower == 'e')
+			lower++;
+		putchar(lower);
 		lower++;
 	}
 		putchar('\n');
