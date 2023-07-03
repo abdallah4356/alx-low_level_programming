@@ -21,13 +21,13 @@ int main(void)
 			{
 				putchar(n + 48);
 				putchar(j + 48);
-			}
 
 				if (n + j != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
+			}
 		j++;
 		}
 	n++;
@@ -36,4 +36,3 @@ int main(void)
 
 	return (0);
 }
-	
