@@ -11,7 +11,7 @@
 void print_alphabet_x10(void)
 {
 	int n;
-	int y;
+	int y = 1;
 
 		while (y <= 10)
 	{
