@@ -10,25 +10,30 @@
 
 int main(void)
 {
-	int n = 48;
-	int j = 48;
+	int n = 0;
+	int j;
 
-	while (n <= 56)
+	while (n <= 9)
 	{
-		putchar(n);
-		n++;
-	}
-	while (j <= n)
-	{
-		putchar(n);
-
-		if (j != 57)
+		j = 0;
+		while (j <= 9)
 		{
-			putchar(',');
-			putchar(' ');
+			if (n != j && n < j)
+			{
+				putchar(n + 48);
+				putchar(j + 48);
+
+				if (n + j != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			j++;
+			}
+		n++;
 		}
-		j++;
 	}
 	putchar('\n');
+
 	return (0);
 }
