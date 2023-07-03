@@ -10,8 +10,7 @@
 
 int main(void)
 {
-	int n = 0;
-	int j;
+	int n = 0, j;
 
 	while (n <= 9)
 	{
