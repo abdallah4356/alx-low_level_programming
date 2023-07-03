@@ -21,18 +21,19 @@ int main(void)
 			{
 				putchar(n + 48);
 				putchar(j + 48);
+			}
 
 				if (n + j != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-			j++;
-			}
-		n++;
+		j++;
 		}
+	n++;
 	}
 	putchar('\n');
 
 	return (0);
 }
+	
