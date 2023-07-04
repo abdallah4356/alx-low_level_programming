@@ -20,6 +20,7 @@ int print_last_digit(int j)
 	{
 		jlast = j % 10;
 	}
+		_putchar(jlast + 48);
 
 	return (jlast);
 }
