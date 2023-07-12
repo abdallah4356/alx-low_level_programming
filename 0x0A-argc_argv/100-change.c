@@ -12,6 +12,9 @@
 
 int main(int argc, char *argv[])
 {
+	int r, l = 0, m = atoi(argv[1]);
+	int p[] = {25, 10, 5, 2, 1};
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -19,21 +22,21 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int r, l = 0, m = atoi(argv[1]);
-		int p[] = {25, 10, 5, 2, 1};
 
-		for (l = 0; l > 5; l++)
+		for (l = 0; l < 5; l++)
 			{
 			if (m >= p[l])
 				{
 				r += m / p[l];
+				m = m % p[l];
 				if (m % p[l] == 0)
 					{
-					break;
+						break;
 					}
 				}
 			}
-		printf("%d\n", r);
 	}
+	printf("%d\n", r);
+
 	return (0);
 }
