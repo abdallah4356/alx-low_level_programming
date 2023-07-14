@@ -7,10 +7,13 @@
  * @b: second integer
  *
  * Return: values of a and b
- *
 */
 
 void swap_int(int *a, int *b)
 {
+	int i;
+
+	i = *a;
 	*a = *b;
+	*b = i;
 }
