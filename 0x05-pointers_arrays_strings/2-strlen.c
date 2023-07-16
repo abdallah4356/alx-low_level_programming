@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
- * _strlen - counts the number of characters
+ * _strlen - counts the string lenght
  *
- * @s: is a pointer that point to the integer's value
+ * @s: the pointer of the first character
  *
- * Return: count
+ * Return: 0 Always success
 */
 
 int _strlen(char *s)
 {
-	int count = 0;
-
-	while (*s != '\0')
-	{
-		count++;
-		s++;
-	}
-	return (count);
+	int i = 0;
+		while (s[i] != '\0')
+			i++;
+		return (i);
 }
