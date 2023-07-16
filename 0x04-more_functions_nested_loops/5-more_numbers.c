@@ -10,14 +10,14 @@
 
 void more_numbers(void)
 {
-	int lines, nums;
+	int lines = 1, nums;
 
-	for (lines = 1; lines <= 10; lines++)
+	while (lines <= 10)
 	{
 		for (nums = 0; nums <= 14; nums++)
 		{
 			_putchar(nums + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
-	}
+	}lines++;
 }
