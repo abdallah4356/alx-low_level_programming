@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	while (--argc)
 	{
 		for (p = argv[argc]; *p; p++)
-			if (*p < 48 || *p > '9')
+			if (*p < '0' || *p > '9')
 			{
 				printf("Error");
 				return (1);
