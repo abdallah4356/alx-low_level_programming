@@ -28,12 +28,9 @@ int main(int argc, char **argv)
 			{
 				result += cash / cents[r];
 				cash = cash % cents[r];
-				if (cash % cents[r] == 0)
-				{
-					break;
-				}
 			}
 		}
 		printf("%d\n", result);
 	}
+	return (0);
 }
