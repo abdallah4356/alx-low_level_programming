@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - adds positive numbers
@@ -11,7 +12,20 @@
 
 int main(int argc, char **argv)
 {
-	int result;
+	int result = 0;
+	char *p;
 
-	if ()
+	while (--argc)
+	{
+		for (p = argv[argc]; *p; p++)
+			if (*p < 48 || *p > '9')
+			{
+				printf("Error");
+				return (1);
+			}
+			else
+			result += atoi(argv[argc]);
+	}
+	printf("%d\n", result);
+	return (0);
 }
