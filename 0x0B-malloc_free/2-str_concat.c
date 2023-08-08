@@ -13,16 +13,20 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *oc;
 	size_t e1, e2;
+	char *oc;
 
 	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
+
 	e1 = strlen(s1);
 	e2 = strlen(s2);
 	oc = malloc((e1 + e2 + 1) * sizeof(char));
+
+	if (oc == NULL)
+		return (NULL);
 
 	strcpy(oc, s1);
 	strcat(oc, s2);
