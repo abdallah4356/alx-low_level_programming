@@ -13,9 +13,17 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	s2 = malloc(strlen(s1));
-	if (s1 == 0)
+	char *oc;
+	size_t e1, e2;
+
+	if (s1 == NULL || s2 == NULL)
+	{
 		return (NULL);
-	else
-		return (strcat(s1, s2));
+	}
+		e1 = strlen(s1);
+		e2 = strlen(s2);
+		oc = malloc(e1 + e2 + 1);
+		strcpy(oc, s1);
+		strcat(oc, s2);
+		return (oc);
 }
