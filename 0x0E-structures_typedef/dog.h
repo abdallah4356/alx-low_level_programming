@@ -4,7 +4,11 @@
 #include <stdio.h>
 
 /**
- * dog - a structure
+ * struct dog - a structure
+ *
+ * @name: the name of kalba
+ * @age: kalba age
+ * @owner: kalba's owner
  *
  * Description: a structure for dogs
 */
