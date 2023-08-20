@@ -26,7 +26,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	else
 			for (r = 0; r < n; r++)
-			printf("%d%s", va_arg(vl, int), separator);
-	va_end(vl);
+			{
+			printf("%d", va_arg(vl, int));
+			printf("%s", separator);
+			}
+			
 	printf("\n");
+
+	va_end(vl);
 }
