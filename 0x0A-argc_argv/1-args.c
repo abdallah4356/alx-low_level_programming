@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - prints num of args
+ * main - prints the number of arguments
  *
- * @argc: the arg count
- * @argv: the list
+ * @argc: the argument count
+ * @argv: the argument vector
  *
- * Retrun: the arg count
-*/
+ * Return: Always 0 (success)
+ */
 
 int main(int argc, char *argv[])
 {
