@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int m = 0;
 	char *u;
-	
+
 	while (--argc)
 	{
 		for (u = argv[argc]; *u; u++)
