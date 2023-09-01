@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - prints the first arg
+ * main - prints the number of arguments
  *
- * @argc: arg count
- * @argv: arg list
+ * @argc: the argument count
+ * @argv: the argument vector
  *
- * Retrun: 0 Always
-*/
+ * Return: Always 0 (success)
+ */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
 	printf("%s\n", argv[0]);
