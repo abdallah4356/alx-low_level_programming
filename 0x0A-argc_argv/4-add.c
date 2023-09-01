@@ -12,11 +12,11 @@
 
 int main(int argc, char *argv[])
 {
+	int m = 0;
+	char *u;
+		
 	while (--argc)
 	{
-		int m = 0;
-		char *u;
-
 		for (u = argv[argc]; *u; u++)
 			if (*u < 48 || *u > 57)
 			{
