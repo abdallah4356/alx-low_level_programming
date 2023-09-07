@@ -3,32 +3,32 @@
 #include <stdlib.h>
 
 /**
- * _memset - sets mem
+ * _memset - sets memory
  *
- * @s: the ptr to the string
- * @b: a char
- * @n: a positive number
- * Return: pointer
-*/
+ * @s: the pointer to the memory region
+ * @b: the value to set
+ * @n: the number of bytes to set
+ * Return: pointer to the memory region
+ */
 
-char *_memset(char *s, char b, unsigned int n)
+void *_memset(void *s, int b, size_t n)
 {
-	char *p = s;
+	unsigned char *p = s;
 
 	while (n--)
-		*s++ = b;
+		*p++ = (unsigned char)b;
 
-	return (p);
+	return (s);
 }
 
 /**
  * _calloc - allocates memory for an array using malloc
  *
- * @nmemb: n of memory bytes
- * @size: the size
+ * @nmemb: number of elements in the array
+ * @size: size of each element
  *
- * Return: ptr to the allocated memory
-*/
+ * Return: pointer to the allocated memory
+ */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -36,12 +36,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	s = malloc(sizeof(int) * nmemb);
-
-	if (s == 0)
+	s = malloc(nmemb * size);
+	if (s == NULL)
 		return (NULL);
-
-	_memset(s, 0, sizeof(int) * nmemb);
-
+	_memset(s, 0, nmemb * size);
 	return (s);
 }
