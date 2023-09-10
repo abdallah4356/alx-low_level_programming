@@ -10,15 +10,8 @@
 
 int _strlen_recursion(char *s)
 {
-	int x = 0;
-
 	if (*s == '\0')
 	return (0);
 
-	else
-	{
-	_strlen_recursion(s + 1);
-	x++;
-	}
-	return (x);
+	return (_strlen_recursion(s + 1));
 }
