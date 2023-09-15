@@ -13,9 +13,9 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list vl;
 	unsigned int j;
 	const char *s;
+	va_list vl;
 
 	va_start(vl, n);
 
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (s == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 		}
 		else
 		{
