@@ -23,6 +23,7 @@ int _strlen(char *s)
  * print_list - prints all the elements inside the list struct
  *
  * @h: the header pointer
+ *
  * Return: the elements given to the program
 */
 
